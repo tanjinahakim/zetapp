@@ -1,10 +1,8 @@
 'use client'
-import dynamic from 'next/dynamic';
 import Image from 'next/image';
 import React, { useEffect } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
-const AOSComponent = dynamic(() => import('../Components/AOSComponent'), { ssr: false });
 
 const Banner = () => {
     useEffect(() => {
@@ -26,7 +24,7 @@ const Banner = () => {
       <div className='absolute -top-5 right-3'>
         <Image src='/images/banner/HeroImgNew.png' alt='banner' width={500} height={100}/>
       </div>
-      <AOSComponent />
+      
     </div>
   );
 };
